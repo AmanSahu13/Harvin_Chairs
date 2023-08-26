@@ -1,0 +1,307 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+ display: flex;
+ flex-direction: column;
+}
+/* -------------------Header-Section----------------------- */
+#HeaderSection{
+    background: url(image/living-room-275837_1280.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.title{
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 20%;
+    
+}
+.title h1{
+    font-size: 50px;
+    font-style:initial;
+  
+}
+.title span{
+    color: #E9912D;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    position: fixed;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 20px 20px ;
+    border-radius: 10px;
+    height: 6vh;
+    width: 95%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.middle ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.middle li {
+    margin-right: 20px;
+}
+
+.middle a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.middle a:hover, .middle a.active{
+    cursor: pointer;
+    color: #416A5A;
+}
+.right {
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 15%;
+    height: 6vh;
+}
+
+.box1 {
+    /* border: 2px solid black; */
+    background-color: #efefefbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 5px;
+
+}
+.box1 i{
+    font-size: 15px;
+}
+.box2 {
+    /* border: 2px solid black; */
+    background-color: #efefefbb;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    /* border-radius: 50%; */
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 5px;
+    
+
+}
+.box2 img{
+    width: 100%;
+    height: 3vh;
+    border-radius: 100%;
+    background-size: cover;
+    mix-blend-mode: multiply;
+
+}
+.box1 i{
+    font-size: 20px;
+}
+
+/* -------------------Section-1----------------------- */
+
+#section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.s1-container{
+    width: 15%;
+    height: 35vh;
+    margin: 30px;
+    position: relative;
+    flex-basis: calc(33% - 60px);
+
+}
+.D-box{
+    border: 2px solid green;
+    border-top-right-radius: 25%;
+    height: 34.5vh;
+    width: 63%;
+    background: #416A5A;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+}
+.D-box h4{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.D-box p{
+    color: #f6fc3d;
+    font-size: 10px;
+}
+
+.U-box {
+    width: 90%;
+    height: 80%;
+    top: 76px;
+    left: 55px;
+    position: relative;
+}
+.U-box img {
+    /* background-image: url("image/chair-1.jpg"); */
+    border-top-left-radius: 30%;
+    width: 95%;
+    height: 100%;
+    background-size: contain; /* Updated background-size property */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    position: relative;
+}
+
+.img-chair a {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: #416A5A;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.img-chair i {
+    margin-left: 5px;
+}
+
+/* -------------------Section-2----------------------- */
+
+#section2 {
+    background-color: #FFEED4;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.s2-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 35px 30px;
+    /* flex-direction: column; */
+    position: relative; /* Add relative positioning */
+}
+
+.sofa {
+    width: 41%;
+    background-color: #FFE0B4;
+    display: flex;
+    border-top-left-radius: 426%;
+    border-bottom-left-radius: 434%;
+    border-top-right-radius: 398%;
+    border-bottom-right-radius: 519%;
+    left: 74px;
+    padding: 45px;
+    position: relative; /* Add relative positioning */
+}
+
+.sofa img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.sofa-time {
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Position at the top */
+    right: 0; /* Position on the right */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    /* height: ; */
+    text-justify: auto;
+    /* background-color: rgba(255, 255, 255, 0.8); Add background color with transparency */
+    padding: 15px;
+    z-index: 2; /* Bring to front */
+}
+
+.sofa-time h1 {
+    font-size: 5vw;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sofa-time  span {
+    color: #E9912D;
+    /* font-size: 5vw; */
+}
+
+.sofa-time h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-top: 5px;
+}
+#line-box {
+    display: inline-block;
+    width: 0.3em; /* Set width to match letter height */
+    height: 0.8em; /* Set height to match letter height */
+    background-color:#E9912D;
+    margin-top: -0.3em; /* Adjust margin to align the box correctly */
+    margin-left: 5px; /* Add a small margin for spacing */
+}
+
+.s2-btn {
+    background: transparent;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+    position: absolute; /* Add absolute positioning */
+    bottom: -25px; /* Position at the bottom */
+    right: 10px; /* Position on the right */
+    z-index: 3;
+}
