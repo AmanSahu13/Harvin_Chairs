@@ -41,7 +41,7 @@ body {
     align-items: center;
     background-color: white;
     color: black;
-    position: fixed;
+    position: static;
     /* border: 2px solid black; */
     padding: 10px;
     margin: 20px 20px ;
@@ -208,6 +208,36 @@ body {
     margin-left: 5px;
 }
 
+/* -------------------Service-Section----------------------- */
+#Service-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    flex-wrap: wrap;
+
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    width: 23%;
+    height: 15avh;
+}
+.item.warranty{
+    width: 10%;
+    height: auto;;
+}
+.item-notes h4{
+    font-size: larger;
+    font-weight: bold;
+}
+.item-notes p{
+    font-size: 15px;
+}
 /* -------------------Section-2----------------------- */
 
 #section2 {
@@ -282,6 +312,270 @@ body {
     font-size: 3vw;
     margin-top: 5px;
 }
+#line-box {
+    display: inline-block;
+    width: 0.3em; /* Set width to match letter height */
+    height: 0.8em; /* Set height to match letter height */
+    background-color:#E9912D;
+    margin-top: -0.3em; /* Adjust margin to align the box correctly */
+    margin-left: 5px; /* Add a small margin for spacing */
+}
+
+.s2-btn {
+    background: transparent;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+    position: absolute; /* Add absolute positioning */
+    bottom: -25px; /* Position at the bottom */
+    right: 10px; /* Position on the right */
+    z-index: 3;
+}
+/* --------------------------------------Happy Clients------------------------------------- */
+
+#Happy-Clients {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+#Happy-Clients h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: xx-large;
+}
+
+.all-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of each row */
+}
+
+.S3-container {
+    width: 23%;
+    background-color: #FFE0B4;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 15px 15px;
+    height: 15vh;
+    box-sizing: border-box;
+}
+
+
+.s3-img {
+    width: 55%;
+    min-height: 2vh;
+    position: relative;
+}
+
+#img1 img {
+    width: 45%;
+    height: 10vh;
+    position: absolute;
+}
+
+#img2 img {
+    width: 25%;
+    height: auto;
+    background-size: cover;
+    mix-blend-mode: normal;
+    position: absolute;
+    left: 15px;
+    top: 395%;
+    border-radius: 50%;
+}
+.s3-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 35%;
+    margin: -10px;
+    gap: 5px;
+}
+.s3-txt h4 {
+    /* font-size:large; */
+    font-weight: bold;
+}
+.s3-txt p {
+    font-size: 10px;
+    color: rgb(54, 53, 53);
+}
+
+/* ----------------------------------------ShopByRoom-----------------------------------------  */
+
+#ShopByRooms{
+    width: 100%;
+    height: 100%;
+    background-color: #416A5A;
+}
+
+
+.Heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 30px;
+}
+.Heading h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.Heading h1 span{
+    color: #E9912D;
+}
+
+.all-room-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around; /* Spread items across the available space */
+}
+
+.room-container {
+    width: calc(25.33% - 23px);
+    height: 40vh;
+    margin: 10px;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+
+.Upper-box {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    z-index: 1;
+}
+
+.Upper-box img {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    width: 90%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.down-box {
+    border-radius: 5%;
+    height: 29vh;
+    width: 88%;
+    background: #ffffff;
+    top: 10%;
+    left: 19px;
+    padding: 10px;
+    position: absolute;
+    z-index: 0;
+}
+
+.down-box h2 {
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #284137;
+    margin-top: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+   font-weight: bold;  
+}
+
+.room-product p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background: rgba(233, 145, 45);
+    border-top-left-radius: 10px;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+/* -------------------------------------Section-3-------------------------------- */
+
+#section3 {
+    background-color: #FFEED4;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.s3-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 35px 30px;
+    /* flex-direction: column; */
+    position: relative; /* Add relative positioning */
+}
+
+.siting-sofa {
+    width: 41%;
+    background-color: #FFE0B4;
+    display: flex;
+    border-top-left-radius: 426%;
+    border-bottom-left-radius: 434%;
+    border-top-right-radius: 398%;
+    border-bottom-right-radius: 519%;
+    left: 74px;
+    padding: 45px;
+    position: relative; /* Add relative positioning */
+}
+
+.siting-sofa img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.sitting-sofa-time {
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Position at the top */
+    right: 0; /* Position on the right */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap:wrap;
+    width: 37%;
+    padding: 15px;
+    z-index: 2; /* Bring to front */
+}
+
+.sitting-sofa-time h1 {
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sitting-sofa-time  span {
+    color: #E9912D;
+    /* font-size: 5vw; */
+}
+
+/* .sofa-time h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-top: 5px;
+} */
 #line-box {
     display: inline-block;
     width: 0.3em; /* Set width to match letter height */
