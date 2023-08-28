@@ -15,7 +15,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .title{
     font-weight: bold;
@@ -41,7 +41,7 @@ body {
     align-items: center;
     background-color: white;
     color: black;
-    position: static;
+    position: fixed;
     /* border: 2px solid black; */
     padding: 10px;
     margin: 20px 20px ;
@@ -269,13 +269,15 @@ body {
     border-bottom-right-radius: 519%;
     left: 74px;
     padding: 45px;
-    position: relative; /* Add relative positioning */
+    position: relative; 
+    /* Add relative positioning */
 }
 
 .sofa img {
     max-width: 100%;
     height: auto;
     mix-blend-mode: multiply;
+
 }
 
 .sofa-time {
@@ -291,7 +293,7 @@ body {
     text-justify: auto;
     /* background-color: rgba(255, 255, 255, 0.8); Add background color with transparency */
     padding: 15px;
-    z-index: 2; /* Bring to front */
+    z-index: 0; /* Bring to front */
 }
 
 .sofa-time h1 {
@@ -333,7 +335,7 @@ body {
     position: absolute; /* Add absolute positioning */
     bottom: -25px; /* Position at the bottom */
     right: 10px; /* Position on the right */
-    z-index: 3;
+    z-index: 0;
 }
 /* --------------------------------------Happy Clients------------------------------------- */
 
@@ -502,6 +504,7 @@ body {
     border-top-left-radius: 10px;
     padding: 5px 10px;
     z-index: 2;
+  
 }
 
 /* -------------------------------------Section-3-------------------------------- */
@@ -520,7 +523,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 35px 30px;
+    margin: 60px 35px;
     /* flex-direction: column; */
     position: relative; /* Add relative positioning */
 }
@@ -555,7 +558,7 @@ body {
     flex-wrap:wrap;
     width: 37%;
     padding: 15px;
-    z-index: 2; /* Bring to front */
+    z-index: 0; /* Bring to front */
 }
 
 .sitting-sofa-time h1 {
@@ -570,12 +573,6 @@ body {
     /* font-size: 5vw; */
 }
 
-/* .sofa-time h3 {
-    color: black;
-    font-weight: bold;
-    font-size: 3vw;
-    margin-top: 5px;
-} */
 #line-box {
     display: inline-block;
     width: 0.3em; /* Set width to match letter height */
@@ -597,5 +594,195 @@ body {
     position: absolute; /* Add absolute positioning */
     bottom: -25px; /* Position at the bottom */
     right: 10px; /* Position on the right */
-    z-index: 3;
+    z-index: 0;
+}
+
+.sitting-chair {
+        width: 35%;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        right: 20px;
+        padding: 10px;
+        margin: 15px;
+        height: 20vh;
+        position: absolute;
+        overflow: visible;
+}
+
+.chair-1 {
+    width: 10%;
+    /* border: 2px solid blue; */
+    background-color: #ffe0b4bb;
+    display: flex;
+    border-top-left-radius: 385%;
+    border-bottom-left-radius: 403%;
+    border-top-right-radius: 361%;
+    border-bottom-right-radius: 505%;
+    left: 0px;
+    padding: 50px;
+    position: relative;
+    overflow: visible;
+}
+
+.chair-1 img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -35px;
+    right: 30px;
+}
+/* ------------------------------------------------Navigation------------------------------------------------ */
+
+#Navigation {
+  
+    width: 100%;
+    
+    display: flex;
+    height: 60vh;
+    /* align-items; */
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-image: url("image/MAP.png");
+}
+.Navigation-box {
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    box-shadow: 0px 0px 4px;
+    width: 21%;
+    height: 5vh;
+    padding: 10px;
+   top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navigation-logo {
+    width: 25%;
+    height: 7vh;
+    border-radius: 100%;
+    display: flex;
+    background-color: #416A5A;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+}
+.Navigation-logo img {
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+.Navigation-text{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+}
+
+/* -------------------------------Maps---------------- */
+#Details{
+    width: 100%;
+    height: 60vh;
+    background-color: #416A5A;
+}
+.details-container{
+    justify-content: space-between;
+    display: flex;
+    margin: 20px;
+}
+.details-left{
+    width: 35%;
+    margin-top: 10%;
+}
+
+.d-logo{
+    width: 30%;
+    height: 10vh;;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+
+.d-left {
+    display: flex;
+    align-items: center;
+}
+
+.about-us{
+    margin-top: 20px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.about-us p{
+    font-size: small;
+}
+
+.socle img{
+    width: 8%;
+    margin-top: 20px;
+}
+
+.details-right{
+    display: flex;
+    justify-content: space-between; 
+    width: 60%;
+    margin-top: 10%;
+    margin-right: 5%;
+
+}
+.d-text{
+    color: white;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+} 
+.icon-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.icon-name2  p{
+    display: flex;
+    gap: 10px;
+    
+}
+.icon-name2 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 20px;
+}
+/* -----------------------------Footer----------------------------- */
+
+footer{
+    background-color: #284137;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+.copyWrite{
+    margin: 3%;
+    color: white;
+}
+.policy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-right: 5%;
 }
