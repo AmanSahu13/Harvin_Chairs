@@ -204,36 +204,6 @@ body {
     margin-left: 5px;
 }
 
-/* -------------------Service-Section----------------------- */
-#Service-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 15vh;
-    flex-wrap: wrap;
-
-}
-.item{
-    display: flex;
-    flex-direction: row;
-    /* border: 2px solid red; */
-    justify-content: space-around;
-    align-items: center;
-    width: 23%;
-    height: 15avh;
-}
-.item.warranty{
-    width: 10%;
-    height: auto;;
-}
-.item-notes h4{
-    font-size: larger;
-    font-weight: bold;
-}
-.item-notes p{
-    font-size: 15px;
-}
 /* -------------------Section-2----------------------- */
 
 #section2 {
@@ -501,7 +471,36 @@ body {
     z-index: 2;
   
 }
+/* -------------------Service-Section----------------------- */
+#Service-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    flex-wrap: wrap;
 
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    width: 23%;
+    height: 15vh;
+}
+.item.warranty{
+    width: 10%;
+    height: auto;;
+}
+.item-notes h4{
+    font-size: larger;
+    font-weight: bold;
+}
+.item-notes p{
+    font-size: 15px;
+}
 /* -------------------------------------Section-3-------------------------------- */
 
 #section3 {
